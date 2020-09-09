@@ -1,0 +1,54 @@
+body {
+    background: #000000;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.row-dec {
+    margin-top: 60px;
+}
+.col-dec {
+    background: rgba(256, 256, 256, 0.3);
+    padding: 20px;
+}
+.user {
+    color: #f1f1f1;
+    background: rgba(256, 256, 256, 0.3);
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.use {
+    color: #f1f1f1;
+    padding: 0px;
+    margin: 0px;
+}
+.usr {
+    color:#2196f3;
+    text-decoration: none;
+}
+.usr:hover {
+    text-decoration: none;
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.2s;
+}
+
+
+@media screen and (max-width:  767px) {
+
+  .Logout_mobile {
+    display: inline-block;
+  }
+  .Logout_pc{
+    display: none;
+  }
+
+}
