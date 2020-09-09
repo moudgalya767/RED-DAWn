@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index_style_sheet.css">
+</head>
+<body>
+
+
+<nav class="nav-dec navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+  <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar" id="nav_btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+            </button>    
+        <span class="brand"><a href="index.html" class="navbar-brand">redDawn</a></span>
+             </div>
+  
+        <div class="collapse navbar-collapse" id=mynavbar>      
+        <form class="nav navbar-right form-inline form-group"  style="padding-top: 10px;">
+             
+            <span class="login_btn">
+            <button class="btn form-control nav-item" onclick="document.getElementById('id01').style.display='block';document.getElementById('nav_btn').click();" type="button" >Login</button>&nbsp;
+            </span>
+            <span class="sign_up_btn">
+            <button class="btn form-control nav-item"  onclick="document.getElementById('id02').style.display='block';document.getElementById('nav_btn').click();" type="button">Sign Up</button>
+            </span>
+            </form> 
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    <div class="row" style="background: rgba(0, 0, 0, 0.7); color: #ffffff; font-size: 50px; text-align: center; padding: 20px">
+        <div class="col-xs-offset-1 col-xs-10" >
+            <p>Cheers!!! We bring up a new and wise place to let you meet new buddies for life and post your ideas and content that you always wanted to share without any hodgepodge.</p>
+            <button class="btn btn_dec" onclick="document.getElementById('id01').style.display='block';document.getElementById('nav_btn').click();">Login</button>
+            <button class="btn btn_dec"  onclick="document.getElementById('id02').style.display='block';document.getElementById('nav_btn').click();">Sign Up</button>
+        </div>
+    </div>
+    </div>
+<div id="id02" class="modaal">
+  <form class="modaal-content animate" action="" method="" id="signup_form">
+    <div class="imgcontaineer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modaal">&times;</span>
+     
+    </div>
+
+    <div class="containeer">
+      <h2 style="font-size:160%;"><b>Sign up</b></h2>
+      <p> Please fill the details given below</p>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" id="signup_name" required>
+      
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="signup_username" onblur="username_check()" required>
+      <span class="glyphicon glyphicon-remove-sign" id="signup_uname_glyp" style="display: none;"></span>
+      
+      <label for="mail"><b>Email_Id</b></label>
+      <input type="text" placeholder="Enter email-id" name="email" id="signup_email"  required>
+     
+      
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pwd" id="signup_pwd" required>
+       
+      <label for="rpwd"><b> Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="rpwd" id="signup_rpwd"  required>
+      
+        
+      <button type="submit" id="signup_form_submit" class="btn btn-primary">Sign Up</button>
+        <p id="signup_error"></p>
+      <label>
+       
+      </label>
+    </div>
+
+    
+  </form>
+</div>
+<div id="id01" class="modaal">
+  
+  <form class="modaal-content animate" action="" method="" id="login_form">
+    <div class="imgcontaineer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modaal">&times;</span>
+     
+    </div>
+
+    <div class="containeer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="login_uname" onkeyup="login_uname_validation()" onkeydown="login_uname_validation()" required><span class="glyphicon glyphicon-remove-sign" id="login_uname_glyp" style="display: none;"></span>
+      <label id="login_uname_error" style="display: none;color: red;"></label>
+      
+      <label for="pwd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pwd" id="login_pwd" onkeyup="login_pwd_validation()" onkeydown="login_pwd_validation()" required><span class="glyphicon glyphicon-remove-sign" id="login_pwd_glyp" style="display: none;"></span>
+       <label id="login_pwd_error" style="display: none;color: red;"></label>
+        
+      <button type="submit" id="login_form_submit" class="btn btn-primary">Login</button>
+      <p id="login_error"></p>
+      <label>
+       
+      </label>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+<script src="index_script.js"></script>
