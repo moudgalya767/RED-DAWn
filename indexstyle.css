@@ -1,0 +1,172 @@
+body {font-family: Arial, Helvetica, sans-serif;
+      background-image: url('img4.jpg');
+        background-size: cover; 
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff4336;
+}
+
+/* Center the image and position the close button */
+.imgcontaineer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.home{
+  padding: 20px;
+  margin: 100px 400px 100px 400px;}
+.containeer {
+  padding: 16px;
+}
+
+span.pwd {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The modaal (background) */
+.modaal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* modaal Content/Box */
+.modaal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.2s;
+  animation: animatezoom 0.2s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width:  767px) {
+
+  .modaal-content {
+    width: 80%;
+  }
+  span.pwd {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+.panel-transparent .panel-body .btn:hover
+    {
+      
+      color: #255784;
+      background: #2196f3;
+      box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+      transition-delay: 0.2s;
+
+    }
+
+    
+    .nav-dec .btn{
+      background: rgba(46, 51, 56, 0.2);
+     }
+
+      .brand .navbar-brand:hover
+    {
+        color: rgba(0,0,0,0.4);
+      background: #f32121;
+      box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
+      transition-delay: 0.2s;
+  }
+
+     .nav-dec .login_btn .btn:hover
+    {
+
+      color: #255784;
+      background:#2196f3;
+      box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+      transition-delay: 0.2s;
+
+    }
+    .nav-dec .sign_up_btn .btn:hover
+    {
+
+      color: #255784;
+      background: #21f325;
+      box-shadow: 0 0 10px #21f325, 0 0 40px #21f325, 0 0 80px #21f325;
+      transition-delay: 0.2s;
+
+    }
+    .btn_dec
+    {
+        background: rgba(0,0,0,0.5);
+    }
+    .btn_dec:hover
+    {
+        color: #255784;
+        background:#e0dd0d;
+        box-shadow: 0 0 10px #fffb00, 0 0 40px #fffb00, 0 0 80px #fffb00;
+        transition-delay: 0.2s;
+    }
